@@ -25,6 +25,7 @@
 }
 </style>
 <script language="javascript">
+ alert("Bienvenido");
 function Ver_Hora()
 			{
 				var mihora = new Date();
@@ -36,7 +37,7 @@ function Ver_Hora()
 				document.forms[0].miReloj.value = horas + " : " + minutos + " : " + segundos;
 			}
 			var nom;
-nom= prompt("Escribe tu nombre","NOMBRE");
+nom= prompt("Escribe tu nombre porfavor","");
 function nombre()
 {
 var texto = document.getElementById("uno");
@@ -57,6 +58,23 @@ else
 function plop(){
 			window.open("https://salinascristofer313.github.io/PW1/");
 			}
+			 function ver_imagen()
+ {
+	 if(!document.images)
+	 return
+	 document.images.img.src=
+	 document.imagenes.imagen.options[document.imagenes.imagen.selectedIndex].value
+ }
+ function cambioLink(){
+				var e1 =document.getElementById("en1");
+				e1.href = "https://www.factorenergia.com/es/blog/eficiencia-energetica/energia-eolica/";
+					var e2 =document.getElementById("en2");
+				e2.href = "https://es.wikipedia.org/wiki/Energ%C3%ADa_e%C3%B3lica";
+			} 
+			function confirmar()
+{ 
+return confirm("¿Deseas entrar a esa página?, Saldras de esta!!!")
+}
 </script>
 </head>
 
@@ -76,7 +94,7 @@ function plop(){
 	</script>
 </aside>
 <p id="uno">
-Espera-
+Espera~
 </p>
 <p id="texto">
 La energía eólica es la energía que se obtiene del viento. Se trata de un tipo de energía cinética producida por el efecto de las corrientes de aire. Esta energía la podemos convertir en electricidad a través de un generador eléctrico. Es una energía renovable, limpia, que no contamina y que ayuda a reemplazar la energía producida a través de los combustibles fósiles.
@@ -97,11 +115,24 @@ El mayor productor de energía eólica del mundo es Estados Unidos, seguido de A
 Una turbina eólica es una máquina que transforma la energía del viento en energía mecánica mediante unas aspas oblicuas unidas a un eje común. El eje giratorio puede conectarse a varios tipos de maquinaria, sea para moler grano (molinos), bombear agua o generar electricidad. Cuando se usa para producir electricidad se le denomina generador de turbina de viento. Las máquinas movidas por el viento tienen un origen remoto, siendo las más antiguas las que funcionaban como molinos. La energía eólica es la energía que se obtiene del viento o, dicho de otro modo, es el aprovechamiento de la energía cinética de las masas de aire que puede convertirse en energía mecánica y a partir de ella en electricidad u otras formas útiles de Energía en cotidianas actividades humanas.</p>
 <iframe width="853" height="480" src="https://www.youtube.com/embed/y46MeMRx1qw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <h3 id="texto">
+<audio autoplay="true" controls="controls" src="ending-full-night-running-by-shin-sakiura-ft-aaamyyy.mp3"  ></audio>
+ <form name="imagenes" id="holo">
+<select name="imagen" size="1" onchange="ver_imagen()">
+<option selected="selected">Eligen imagen</option>
+<option value="grafico.png">Esquema</option>
+<option value="desierto.png">Desierto</option>
+<option value="Green.jpg">Praderas</option>
+</select>
+</form>
+<p>
+<img src="Green.jpg" name="img" width=300 height=150 border=3  id="holo">
+</p>
 Refenecias
 </h3>
 <li>
-<a href="https://www.factorenergia.com/es/blog/eficiencia-energetica/energia-eolica/" >Factor energía</a><br />
-<li><a href="https://es.wikipedia.org/wiki/Energ%C3%ADa_e%C3%B3lica">Wikipedia</a><br />
+<a  id="en1" onclick="return confirmar()">Factor energía</a><br />
+<li><a  id="en2" onclick="return confirmar()">Wikipedia</a><br />
+<input type="button" value="desbloquear enlaces" onclick="cambioLink()" /><br />
 <iframe src="https://www.factorenergia.com/es/blog/eficiencia-energetica/energia-eolica/" width="528" height="600" align="middle" ></iframe>
 <hr />
 <a href="#inicio">Volver arriba</a>
@@ -112,5 +143,6 @@ Refenecias
 </form>
 <p  onclick="plop()"><br />Pop-up fuera del tema
 	</p>
+   
 </body>
 </html>
