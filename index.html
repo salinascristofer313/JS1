@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Energía eólica</title>
+<link rel="icon" href="fan.jpg" />
+<style type="text/css">
+#titulo {
+	font-family:"Comic Sans MS", cursive;
+	background-color:#900;
+}
+#imagenes {
+	float: right;
+	border: thick;
+	display: block;
+	padding: 20px;
+	height: auto;
+	width: 230px;
+}
+#texto {
+	font-family:"Comic Sans MS", cursive
+}
+#uno {
+	font-family:"Comic Sans MS", cursive
+}
+</style>
+<script language="javascript">
+function Ver_Hora()
+			{
+				var mihora = new Date();
+				var horas = mihora.getHours().toString();
+				var minutos = mihora.getMinutes().toString();
+				if (minutos.length == 1) minutos = "0" + minutos;
+				var segundos = mihora.getSeconds().toString();
+				if (segundos.length == 1) segundos = "0" + segundos;
+				document.forms[0].miReloj.value = horas + " : " + minutos + " : " + segundos;
+			}
+			var nom;
+nom= prompt("Escribe tu nombre","NOMBRE");
+function nombre()
+{
+var texto = document.getElementById("uno");
+var mihora = new Date();
+				var horas = mihora.getHours().toString();
+ if (horas< 12){
+ texto.innerHTML = "Buenos dias, " + nom;
+}
+else if (horas>18)
+{
+	texto.innerHTML = "Buenas noches, " + nom;
+}
+else 
+{
+	texto.innerHTML = "Buenas tardes, " + nom;
+}
+}
+function plop(){
+			window.open("https://salinascristofer313.github.io/PW1/");
+			}
+</script>
+</head>
+
+<body text="#FFFFFF" bgcolor="#000000" alink="#00FF33" vlink="#33FFFF" link="#FFFF99" onload="nombre()">
+<a name="inicio"></a>
+<div id="titulo" align="center">
+  <h1> Energía eólica</h1></div>
+<aside id="imagenes">
+<img src="Post-Eolica-Gràfica-277x300.png"  style="background-color:#FFF"/>
+<form>
+		<p>
+			<input type="text" size="10" name="miReloj" id="Reloj" disabled="disabled">
+		</p>
+	</form>
+    <script>
+		var r = setInterval ("Ver_Hora()",500);
+	</script>
+</aside>
+<p id="uno">
+Espera-
+</p>
+<p id="texto">
+La energía eólica es la energía que se obtiene del viento. Se trata de un tipo de energía cinética producida por el efecto de las corrientes de aire. Esta energía la podemos convertir en electricidad a través de un generador eléctrico. Es una energía renovable, limpia, que no contamina y que ayuda a reemplazar la energía producida a través de los combustibles fósiles.
+</p>
+<p id="texto">
+El mayor productor de energía eólica del mundo es Estados Unidos, seguido de Alemania, China, India y España. En América Latina el mayor productor es Brasil. En España, la energía eólica abasteció de electricidad al equivalente a 12 millones de hogares, esto es un 18% de las necesidades del país (Fuente AEE).
+</p>
+
+<p id="texto">En la actualidad, la energía eólica se utiliza principalmente para producir electricidad, lo que se consigue mediante aerogeneradores conectados a las grandes redes de distribución de energía eléctrica, entre otras. Los parques eólicos construidos en tierra suponen una fuente de energía cada vez más barata y competitiva, esa incluso más barata en muchas regiones que otras fuentes de energía convencionales.​ Además se puede proporcionar electricidad en regiones aisladas que no tienen acceso a la red eléctrica mediante instalaciones eólicas de reducido tamaño, o también con energía solar fotovoltaica. Las compañías eléctricas distribuidoras adquieren cada vez en mayor medida el excedente de electricidad producido por pequeñas instalaciones eólicas domésticas. El auge de la energía eólica ha provocado también la planificación y construcción de parques eólicos marinos —a menudo conocidos como parques eólicos <em>offshore</em> por su nombre en inglés—, situados cerca de las costas. La energía del viento es más estable y fuerte en el mar que en tierra, y los parques eólicos marinos tienen un impacto visual menor, aunque los costos de construcción y mantenimiento son considerablemente mayores.</p>
+<h2><span id="texto">Cómo se produce y genera</span>
+</h2>
+<p>La energía del viento está relacionada con el movimiento de las masas de aire que se desplazan desde zonas de alta presión atmosférica hacia zonas adyacentes de menor presión, con velocidades proporcionales al gradiente de presión y así poder generar energía.</p>
+<p id="texto">Los vientos se generan a causa del calentamiento no uniforme de la superficie terrestre debido a la radiación solar; entre el 1 y el 2 % de la energía proveniente del Sol se convierte en viento. Durante el día, los continentes transfieren una mayor cantidad de energía solar al aire que las masas de agua, haciendo que este se caliente y se expanda, por lo que se vuelve menos denso y se eleva. El aire más frío y pesado que proviene de los mares, océanos y grandes lagos se pone en movimiento para ocupar el lugar dejado por el aire caliente.</p>
+
+<p id="texto">Para poder aprovechar la energía eólica es importante conocer las variaciones diurnas, nocturnas y estacionales de los vientos, la variación de la velocidad del viento con la altura sobre el suelo, la entidad de las ráfagas en espacios de tiempo breves, y los valores máximos ocurridos en series históricas de datos con una duración mínima de 20 años. Para poder utilizar la energía del viento, es necesario que este alcance una velocidad mínima que depende del Aerogenerador que se vaya a utilizar pero que suele empezar entre los 3 m/s (10 km/h) y los 4 m/s (14,4 km/h), velocidad llamada &quot;<em>cut-in speed</em>&quot;, y que no supere los 25 m/s (90 km/h), velocidad llamada <em>cut-out speed</em>.</p>
+<p id="texto">La energía del viento se aprovecha mediante el uso de máquinas eólicas o aeromotores capaces de transformar la energía eólica en energía mecánica de rotación utilizable, ya sea para accionar directamente las máquinas operatrices o para la producción de energía eléctrica. En este último caso, el más ampliamente utilizado en la actualidad, el sistema de conversión —que comprende un generador eléctrico con sus sistemas de control y de conexión a la red— es conocido como aerogenerador. En estos la energía eólica mueve una hélice y mediante un sistema mecánico se hace girar el rotor de un generador, normalmente un alternador, que produce energía eléctrica. Para que su instalación resulte rentable, suelen agruparse en concentraciones denominadas parques eólicos.</p>
+<p id="texto">
+Una turbina eólica es una máquina que transforma la energía del viento en energía mecánica mediante unas aspas oblicuas unidas a un eje común. El eje giratorio puede conectarse a varios tipos de maquinaria, sea para moler grano (molinos), bombear agua o generar electricidad. Cuando se usa para producir electricidad se le denomina generador de turbina de viento. Las máquinas movidas por el viento tienen un origen remoto, siendo las más antiguas las que funcionaban como molinos. La energía eólica es la energía que se obtiene del viento o, dicho de otro modo, es el aprovechamiento de la energía cinética de las masas de aire que puede convertirse en energía mecánica y a partir de ella en electricidad u otras formas útiles de Energía en cotidianas actividades humanas.</p>
+<iframe width="853" height="480" src="https://www.youtube.com/embed/y46MeMRx1qw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3 id="texto">
+Refenecias
+</h3>
+<li>
+<a href="https://www.factorenergia.com/es/blog/eficiencia-energetica/energia-eolica/" >Factor energía</a><br />
+<li><a href="https://es.wikipedia.org/wiki/Energ%C3%ADa_e%C3%B3lica">Wikipedia</a><br />
+<iframe src="https://www.factorenergia.com/es/blog/eficiencia-energetica/energia-eolica/" width="528" height="600" align="middle" ></iframe>
+<hr />
+<a href="#inicio">Volver arriba</a>
+<form>
+  <p>
+    <input type="button" value="Imprimir" onclick="window.print()" style="color:#000">
+  </p>
+</form>
+<p  onclick="plop()"><br />Pop-up fuera del tema
+	</p>
+</body>
+</html>
